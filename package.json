@@ -1,6 +1,6 @@
 {
   "name": "bs-react-native-linear-gradient",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Bucklescript bindings for React Native Linear Gradient",
   "main": "lib/js/re/Foo.js",
   "repository": "git@github.com:Astrocoders/bs-react-native-linear-gradient.git",
