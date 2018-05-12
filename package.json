@@ -1,0 +1,36 @@
+{
+  "name": "bs-react-native-linear-gradient",
+  "version": "1.0.0",
+  "description": "Bucklescript bindings for React Native Linear Gradient",
+  "main": "lib/js/re/Foo.js",
+  "repository": "git@github.com:Astrocoders/bs-react-native-linear-gradient.git",
+  "author": "Medson Oliveira Junior <medson.oliveira.jr@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bs-react-native": "^0.7.0",
+    "react-native-linear-gradient": "^2.4.0",
+    "reason-react": "^0.4.1"
+  },
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.0",
+    "bs-platform": "^3.0.0",
+    "jest": "^22.1.4",
+    "lint-staged": "^7.1.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.12.1"
+  },
+  "lint-staged": {
+    "*.js": ["prettier --write --single-quote true --trailing-comma all --print-width 120 --semi false", "git add"],
+    "*.re": ["refmt --in-place", "git add"]
+  },
+  "pre-commit": "lint:staged",
+  "scripts": {
+    "start": "yarn bs:watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "bs:build": "bsb -make-world -clean-world",
+    "bs:watch": "bsb -make-world -clean-world -w",
+    "bs:setup": "bsb -make-world",
+    "lint:staged": "lint-staged"
+  }
+}
