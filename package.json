@@ -6,18 +6,19 @@
   "repository": "git@github.com:Astrocoders/bs-react-native-linear-gradient.git",
   "author": "Medson Oliveira Junior <medson.oliveira.jr@gmail.com>",
   "license": "MIT",
-  "dependencies": {
+  "peerDependencies": {
+    "react-native-linear-gradient": "^2.5.3",
     "bs-react-native": "^0.7.0",
     "reason-react": "^0.4.1"
   },
-  "peerDependencies": {
-    "react-native-linear-gradient": "^2.5.3"
-  },
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.0",
+    "@glennsl/bs-jest": "^0.4.7",
+    "react-native-linear-gradient": "^2.5.3",
+    "bs-react-native": "^0.7.0",
+    "reason-react": "^0.4.1",
     "bs-platform": "^3.0.0",
-    "jest": "^22.1.4",
-    "lint-staged": "^7.1.0",
+    "jest": "^24.1.0",
+    "lint-staged": "^8.1.4",
     "pre-commit": "^1.2.2",
     "prettier": "^1.12.1"
   },
